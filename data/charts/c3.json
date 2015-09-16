@@ -1,0 +1,25 @@
+{
+    "id": 15,
+    "name": "Throughput of Jobs",
+    "type": "line",
+    "title": "Throughput of Jobs",
+    "subtitle": "",
+    "xAxis": {
+        "title": "Number of Jobs"
+    },
+    "yAxis": {
+        "title": "Throughput of Jobs",
+        "type":"logarithmic"
+    },
+    "tooltip": {
+        "valueSuffix": ""
+    },
+    "series": [
+        {
+            "type": "line",
+            "name": "Mira",
+            "query":"select agg_perf_MB from jobs_info where agg_perf_MB>0 limit 2000;",
+            "attribute": "agg_perf_MB"
+        }
+    ]
+}

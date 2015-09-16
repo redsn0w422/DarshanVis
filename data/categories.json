@@ -47,6 +47,17 @@
                 "title": "Time Breakdown"
             }
         ]
+    },
+    {
+        
+        "id": 3,
+        "name": "Added by Yasha",
+        "charts": [
+            {
+                "id": 15,
+                "title": "Throughput of Jobs"
+            }
+        ]
     }
 
 ]
