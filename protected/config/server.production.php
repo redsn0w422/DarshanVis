@@ -9,8 +9,8 @@ return array(
     'components' => array(
         'db' => array(
             'connectionString' => 'mysql:host=palm.cs.illinois.edu;dbname=mira_final',
-            'username' => 'huongluu',
-            'password' => '******',
+            'username' => '',
+            'password' => '',
         ),
     ),
 );
