@@ -56,12 +56,18 @@
             {
                 "id": 15,
                 "title": "Throughput of Jobs"
-            },
+            }
+        ]
+    },
+    {
+        
+        "id": 4,
+        "name": "Added by Yasha",
+        "charts": [
             {
-                "id":16,
+                "id": 21,
                 "title": "Application Scatter Plot"
             }
         ]
     }
-
 ]

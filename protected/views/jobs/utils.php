@@ -11,8 +11,17 @@ function getChartInfo($id) {
 
         $json = file_get_contents($charts_dir . $f);
         $chart_data = json_decode($json, true);
-        $charts[] = $chart_data;
+        // $charts[] = $chart_data;
+        $chart_data_arr[] = json_decode($json, true);
+        $charts = array_merge($charts, $chart_data_arr);
     }
+
+    // $json = file_get_contents($charts_dir . 'c4.json');
+    // $chart_data = json_decode($json, true);
+    // $charts[] = $chart_data;
+    // $chart_data_arr[] = json_decode($json, true);
+    // $charts = array_merge($charts, $chart_data_arr);
+
     foreach ($charts as $c) {
         if ($c["id"] == 1) {
             $generic_chart = $c;
@@ -25,7 +34,7 @@ function getChartInfo($id) {
             break;
         }
     }
+    // $main_chart = $charts[14]
     $chart = array_merge($generic_chart, $main_chart);
     return $chart;
 }
-
