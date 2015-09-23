@@ -1,0 +1,30 @@
+{
+    "id": 16,
+    "name": "scatter-chart-2",
+    "type": "scatter",
+    "title": "Application Scatter Plot",
+    "subtitle": "",
+    "xAxis": {
+        "title": "Total Bytes",
+        "attribute": "total_bytes"
+    },
+    "yAxis": {
+        "title": "NProcs",
+        "attribute":"nprocs"
+    },
+    "tooltip": {
+        "valueSuffix": ""
+    },
+    "series": [
+        {
+            "type": "scatter",
+            "name": "",
+            "query": "select uid, appname, start_time, total_bytes, nprocs, agg_perf_MB from jobs_info;",
+            "series1": "avg_bytes",
+            "series2": "max_bytes",
+            "series1-name": "Average I/O Throughput",
+            "series2-name": "Maximum I/O Throughput",
+            "xaxis": "uid"
+        }
+    ]
+}

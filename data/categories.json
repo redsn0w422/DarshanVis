@@ -56,6 +56,10 @@
             {
                 "id": 15,
                 "title": "Throughput of Jobs"
+            },
+            {
+                "id":16,
+                "title": "Application Scatter Plot"
             }
         ]
     }
